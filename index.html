@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Лут-корзины и наборы для игр</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="header__top-content">
+        <div class="header__info">
+          <div class="header__location">
+            <span class="header__icon header__icon--location"></span>
+            <span>Сайлент-Хилл</span>
+          </div>
+          <div class="header__phone">
+            <span class="header__icon header__icon--phone"></span>
+            <span>+7 555 555-37-50</span>
+          </div>
+          <div class="header__schedule">
+            <span>Ежедневно</span>
+            <span>9:00 — 21:00</span>
+          </div>
+        </div>
+        <div class="header__links">
+          <a href="#" class="header__link">Доставка</a>
+          <a href="#" class="header__link">Оплата</a>
+          <a href="#" class="header__link">Контакты</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header__main">
+      <div class="header__main-content">
+        <div class="header__logo-container">
+          <a href="#" class="header__logo">
+            <div class="header__logo-circle">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7v-2z" fill="white"/>
+              </svg>
+            </div>
+          </a>
+          <button class="header__menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+        <div class="header__search">
+          <input type="text" class="header__search-input" placeholder="Поиск товаров...">
+          <button class="header__search-button">Найти</button>
+        </div>
+        
+        <div class="header__actions">
+          <button class="header__action-button header__action-button--telegram">
+            <span class="header__action-icon header__action-icon--telegram"></span>
+          </button>
+          <button class="header__action-button header__action-button--whatsapp">
+            <span class="header__action-icon header__action-icon--whatsapp"></span>
+          </button>
+          <div class="header__language">
+            <span class="header__language-current">RU</span>
+            <span class="header__language-divider">|</span>
+            <span class="header__language-option">EN</span>
+          </div>
+          <button class="header__action-button header__action-button--favorites">
+            <span class="header__action-icon header__action-icon--favorites"></span>
+          </button>
+          <button class="header__action-button header__action-button--profile">
+            <span class="header__action-icon header__action-icon--profile"></span>
+          </button>
+          <button class="header__action-button header__action-button--cart">
+            <span class="header__action-icon header__action-icon--cart"></span>
+            <span class="header__cart-count">20</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navigation">
+      <div class="navigation__content">
+        <div class="navigation__item navigation__item--promo" data-category="promo">
+          <span class="navigation__icon navigation__icon--promo"></span>
+          <span class="navigation__text">Акции</span>
+        </div>
+        <div class="navigation__item navigation__item--hot" data-category="hot">
+          <span class="navigation__icon navigation__icon--hot"></span>
+          <span class="navigation__text">Горячее предложение</span>
+        </div>
+        <div class="navigation__item navigation__item--gifts" data-category="gifts">
+          <span class="navigation__icon navigation__icon--gifts"></span>
+          <span class="navigation__text">Подарочные наборы</span>
+        </div>
+        <div class="navigation__item navigation__item--events" data-category="events">
+          <span class="navigation__icon navigation__icon--events"></span>
+          <span class="navigation__text">События</span>
+        </div>
+        <div class="navigation__item navigation__item--brands" data-category="brands">
+          <span class="navigation__icon navigation__icon--brands"></span>
+          <span class="navigation__text">Наши бренды</span>
+        </div>
+        <div class="navigation__item navigation__item--build">
+          <span class="navigation__icon navigation__icon--build"></span>
+          <span class="navigation__text">Собрать компьютер</span>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Dropdown menus containers -->
+    <div class="dropdown dropdown--tech" id="techDropdown">
+      <div class="dropdown__container">
+        <div class="dropdown__categories">
+          <div class="dropdown__category dropdown__category--active">
+            <span class="dropdown__category-icon dropdown__category-icon--phones"></span>
+            <span class="dropdown__category-text">Смартфоны и гаджеты</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--laptops"></span>
+            <span class="dropdown__category-text">Ноутбуки и компьютеры</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--tv"></span>
+            <span class="dropdown__category-text">Телевизоры и цифровое ТВ</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--audio"></span>
+            <span class="dropdown__category-text">Аудиотехника</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--promo"></span>
+            <span class="dropdown__category-text">Акции</span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--new"></span>
+            <span class="dropdown__category-text">Новинки</span>
+          </div>
+        </div>
+        
+        <div class="dropdown__content">
+          <div class="dropdown__column">
+            <h3 class="dropdown__title">Смартфоны</h3>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Apple iPhone <span class="dropdown__count">123</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Смартфоны <span class="dropdown__count">227</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">iPhone 16 <span class="dropdown__count">120</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Складные <span class="dropdown__count">30</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">realme <span class="dropdown__count">122</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Huawei Mate X6 <span class="dropdown__count">100</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Кнопочные <span class="dropdown__count">23</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Домашние <span class="dropdown__count">17</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Samsung <span class="dropdown__count">27</span></a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="dropdown__column">
+            <h3 class="dropdown__title">Гаджеты</h3>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Смарт-часы <span class="dropdown__count">15</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Смарт-кольца <span class="dropdown__count">34</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Наушники <span class="dropdown__count">21</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Гарнитуры <span class="dropdown__count">12</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Портативное аудио <span class="dropdown__count">42</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Умные гаджеты <span class="dropdown__count">46</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Очки VR <span class="dropdown__count">28</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Для блогеров <span class="dropdown__count">32</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="dropdown dropdown--gift" id="giftDropdown">
+      <div class="dropdown__container">
+        <div class="dropdown__categories">
+          <div class="dropdown__category dropdown__category--active">
+            <span class="dropdown__category-icon dropdown__category-icon--whom"></span>
+            <span class="dropdown__category-text">Кому</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--occasion"></span>
+            <span class="dropdown__category-text">Повод</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+          <div class="dropdown__category">
+            <span class="dropdown__category-icon dropdown__category-icon--content"></span>
+            <span class="dropdown__category-text">Наполнение</span>
+            <span class="dropdown__category-arrow"></span>
+          </div>
+        </div>
+        
+        <div class="dropdown__content">
+          <div class="dropdown__column">
+            <h3 class="dropdown__title">Кому</h3>
+            <ul class="dropdown__list">
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Для мужчин <span class="dropdown__count">123</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Для женщин <span class="dropdown__count">63</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Папе <span class="dropdown__count">120</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Сотруднику <span class="dropdown__count">30</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Мужу <span class="dropdown__count">120</span></a>
+              </li>
+              <li class="dropdown__item">
+                <a href="#" class="dropdown__link">Корпоративный <span class="dropdown__count">100</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="dropdown dropdown--events" id="eventsDropdown">
+      <div class="dropdown__container dropdown__container--small">
+        <ul class="dropdown__list dropdown__list--small">
+          <li class="dropdown__item">
+            <a href="#" class="dropdown__link">ИгроМИР</a>
+          </li>
+          <li class="dropdown__item">
+            <a href="#" class="dropdown__link">Мероприятия</a>
+          </li>
+          <li class="dropdown__item">
+            <a href="#" class="dropdown__link">Мастер-классы</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner__content">
+      <div class="banner__text-container">
+        <h1 class="banner__heading">
+          Отправляйся в приключения с нашими эпическими лут-корзинами и наборами!
+        </h1>
+        <p class="banner__text">
+          Развивай свои навыки, следуя мудрым стратегиям мастеров, и 
+          поднимайся на новый уровень мастерства! С нашей поддержкой 
+          каждое твое действие станет частью великого искусства, а победы — 
+          результатом точного плана и безупречной подготовки!
+        </p>
+        <a href="#" class="banner__button">
+          В каталог
+        </a>
+      </div>
+      
+      <div class="banner__image-container">
+        <div class="controller">
+          <div class="controller__body">
+            <div class="controller__highlight controller__highlight--main"></div>
+            <div class="controller__button controller__button--cross">+</div>
+            <div class="controller__button controller__button--circle"></div>
+            <div class="controller__button controller__button--small1"></div>
+            <div class="controller__button controller__button--small2"></div>
+            <div class="controller__button controller__button--small3"></div>
+            <div class="controller__handle controller__handle--left"></div>
+            <div class="controller__handle controller__handle--right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
